@@ -3,8 +3,8 @@ const routes = require("express").Router();
 
 routes.get("/", myController.awesomeFunction);
 
-routes.get("/ttech", myController.tooeleTech);
+routes.get("/ttech", myController.getAllStudents);
 
-routes.get("/students", myController.getAllStudents);
+routes.use("/students", require("./students"));
 
 module.exports = routes;

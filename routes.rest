@@ -3,3 +3,33 @@ GET http://localhost:3000/ttech HTTP/1.1
 
 ### get the root path 
 GET http://localhost:3000/ HTTP/1.1
+
+### get all students
+GET http://localhost:3000/students HTTP/1.1
+
+### get one student
+GET http://localhost:3000/students/67f5527fb2e44707d17ec876 HTTP/1.1
+
+### create student
+POST http://localhost:3000/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Danny",
+    "lastName": "Smith",
+    "email": "danthemagicman@gmail.com",
+    "age": 72,
+    "currentCollage": "none"
+}
+
+### update student
+POST http://localhost:3000/students/update/67f57982bf361005e5ca1a2a HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Max",
+    "lastName": "Smith",
+    "email": "max@gmail.com",
+    "age": 32,
+    "currentCollage": "Harvard"
+}
