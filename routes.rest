@@ -15,21 +15,24 @@ POST http://localhost:3000/students HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Danny",
-    "lastName": "Smith",
+    "firstName": "Jeff",
+    "lastName": "Phill",
     "email": "danthemagicman@gmail.com",
-    "age": 72,
+    "age": 42,
     "currentCollage": "none"
 }
 
 ### update student
-POST http://localhost:3000/students/update/67f57982bf361005e5ca1a2a HTTP/1.1
+POST http://localhost:3000/students/update/67f5527fb2e44707d17ec876 HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Max",
-    "lastName": "Smith",
+    "firstName": "Mary",
+    "lastName": "Clark",
     "email": "max@gmail.com",
     "age": 32,
     "currentCollage": "Harvard"
 }
+
+### delete student
+DELETE http://localhost:3000/students/delete/67f95448f4a96a80491b99bb HTTP/1.1
