@@ -87,9 +87,6 @@ const logout = (req, res) => {
   res.status(200).json({ message: "Logged out successfully" });
 };
 
-// const protected = (req, res) => {
-//   res.send("Welcome to the protected page");
-// };
 
 const protectedRoute = (req, res) => {
   const authHeader = req.headers.authorization;
