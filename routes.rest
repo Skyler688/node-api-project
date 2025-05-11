@@ -19,7 +19,7 @@ Content-Type: application/json
     "lastName": "Phill",
     "email": "danthemagicman@gmail.com",
     "age": 42,
-    "currentCollage": "none"
+    "currentCollege": "none"
 }
 
 ### update student
@@ -31,7 +31,7 @@ Content-Type: application/json
     "lastName": "Clark",
     "email": "max@gmail.com",
     "age": 32,
-    "currentCollage": "Harvard"
+    "currentCollege": "Harvard"
 }
 
 ### delete student

@@ -18,7 +18,7 @@ const StudentSchema = new Schema({
     type: Number,
     required: true,
   },
-  currentCollage: {
+  currentCollege: {
     type: String,
     required: true,
   },
